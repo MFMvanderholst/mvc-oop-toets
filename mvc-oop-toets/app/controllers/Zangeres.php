@@ -26,6 +26,7 @@ class Zangeres extends BaseController
         $tableRows = "";
         foreach ($zangeres as $value) {
             $tableRows .= "<tr>
+                                <td>$value->Id</td>
                                 <td>$value->Naam</td>
                                 <td>$value->Nettowaarde</td>
                                 <td>$value->Land</td>
@@ -35,7 +36,7 @@ class Zangeres extends BaseController
         }
 
         $data = [
-            'title' => 'Top 5 rijkste zangeressen ter wereld',
+            'title' => 'Top 5 rijkste zazngeressen ter wereld',
             'tableRows' => $tableRows
         ];
 

@@ -5,9 +5,9 @@ class Homepage extends BaseController
     public function index()
     {
         $data = [
-            'title' => 'Homepage'
+            'title' => 'Top 5 Rijkste zangeressen ter wereld'
         ];
     
-        $this->view('Homepage/index', $data);
+        $this->view('zangeres/getzangeres', $data);
     }
 }

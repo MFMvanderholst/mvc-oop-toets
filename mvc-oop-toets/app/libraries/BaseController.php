@@ -2,7 +2,7 @@
 
 class BaseController
 {
-// base 
+
     public function view($view, $data = [])
     {
         if ( file_exists('../app/views/' . $view . '.php')) {

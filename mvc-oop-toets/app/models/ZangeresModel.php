@@ -13,11 +13,11 @@ class ZangeresModel
     {
         $sql = 'SELECT  Id
                        ,Naam
-                       ,Nettowaarde
+                       ,Nettowaarde(miljoen)
                        ,Land
                        ,Mobiel
                        ,Leeftijd
-                FROM    zangeres';
+                FROM    Zangeres';
 
         $this->db->query($sql);
 
